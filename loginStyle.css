@@ -1,0 +1,115 @@
+body {
+        background-image:
+        linear-gradient(rgba(0, 0, 50, 0.3), rgba(0, 0, 0, 0.1)), 
+        url('login-background.jpg');
+    -webkit-background-size: 100%;
+  	-moz-background-size: 100%;
+  	-o-background-size: 100%;
+  	background-size: 100%;
+  	background-attachment: fixed;
+  	overflow: hidden;
+}
+
+textarea:hover, input:hover, 
+textarea:active, input:active, 
+textarea:focus, input:focus,
+button:focus, button:active,
+button:hover, label:focus,
+.btn:active, .btn.active {
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+.login-form {
+	height: 35%;
+	width: 40%;
+	margin: auto;
+	margin-top: 15%;
+}
+
+.login-form-title {
+	height: 40%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 350%;
+	color: white;
+	margin-bottom: 5%;
+}
+
+.loggedin-form-title {
+	height: 40%;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 350%;
+	color: white;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.login-form-title h1 {
+	text-align: center;
+}
+
+.login-form-inner {
+	height: 50%;
+	width: 50%;
+	margin: auto;
+}
+
+.loggedin-form-inner {
+	height: 50%;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	color: #638c7d;
+
+}
+
+.login-form-inner-text {
+	height: 60%;
+	width: 60%;
+	margin: auto;
+}
+
+#usernameText {
+	height: 45%;
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid #78a795;
+	margin: .3%;
+	transition: all .35s;
+}
+
+#passwordText {
+	height: 45%;
+	width: 100%;
+	border-radius: 10px;
+	border: 2px solid #78a795;
+	margin: .3%;
+	transition: all .35s;
+}
+
+#submitButton {
+	height: 40%;
+	width: 100%;
+	border: none;
+	margin: .3%;
+	background-color: #5b4937;
+	border-radius: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 110%; 
+	color: white;
+	transition: all .25s;
+}
+
+
+
+
+
+
+
+
+
+
