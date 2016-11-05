@@ -1,0 +1,110 @@
+body{
+	background-image:
+	linear-gradient(rgba(20, 0, 20, 0.5), rgba(0, 0, 0, 0.4)), 
+	url('https://hd.unsplash.com/photo-1423592707957-3b212afa6733');
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.logout {
+	margin-right: 30;
+	font-size: 20;
+	font-style: normal;
+	font-style: bold;
+	float: right;
+}
+
+.logout:hover {
+	color: #638c7d;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #638c7d;
+}
+
+h1 {
+	font-size: 50;
+}
+
+h2 {
+	font-size: 30;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+}
+p, div {
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	font-family: 'Raleway', sans-serif;
+}
+
+form {
+	background-color: gray;
+	padding: 10;
+	margin: 10;
+
+	border-radius: 10px;
+	border: 1px solid #78a795;
+}
+
+input, textarea {
+	border-radius: 10px;
+	border: 2px solid #78a795;
+	padding-left: 7;
+}
+
+.colorSelector {
+	padding-left: 1;
+	padding-right: 1;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+form input {
+	font-weight: normal;
+}
+
+textarea input {
+	font-weight: normal;
+}
+
+.inputClass {
+	font-weight: normal;
+}
+
+input:hover, textarea:hover {
+	border-color: #638c7d;
+	border-width: 2;
+}
+
+input:focus, textarea:focus {
+	border-color: #638c7d;
+	border-width: 2;
+	outline-width: 0;
+}
+
+.form-box p {
+	font-weight: bold;
+	opacity: 1;
+	color: #000000;
+
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-style: italic;
+}
+.form-box {
+	opacity: .8;
+}
+
+
+.time-entry {
+	text-align: center;
+}
