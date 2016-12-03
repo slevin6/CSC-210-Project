@@ -4,9 +4,9 @@
 starter = """
 <html>
 <head>
-<title>Egenda Login</title>
+<title>Egenda</title>
 <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="icon" href="//www.iconsdb.com/icons/preview/royal-blue/book-xxl.png">
+	<link rel="icon" href="favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,800i" rel="stylesheet">
 
 <link rel="stylesheet" type="text/css" href="../styles.css">
@@ -19,6 +19,11 @@ starter = """
 <div class="container">
 """
 end = """
+   <script>
+        var timer = setTimeout(function() {
+            window.location='../index.html'
+        }, 2000);
+    </script>
 </div>
 </body>
 </html>

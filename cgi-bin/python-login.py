@@ -19,7 +19,7 @@ starter = """
 <title>Egenda Login</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,800i" rel="stylesheet">
 
-<link rel="icon" href="http://www.iconsdb.com/icons/preview/royal-blue/book-xxl.png">
+	<link rel="icon" href="favicon.png">
 <link rel="stylesheet" type="text/css" href="/styles.css">
 <style>
 body{
@@ -33,6 +33,10 @@ body{
   	background-attachment: fixed;
   	overflow: hidden;
   	background-color: orage;}
+  	h1 {
+  	color: white;
+  	font-size: 70;
+  	}
   	h2{
   	color: white;
   	font-size: 40;
@@ -105,7 +109,7 @@ try:
 		print 
 		print starter
 		print '<div class="loggedin-form-title">'
-		print '<h1>Account not found!</h1>'
+		print '<h2>Account not found!</h2>'
 		print '</div>'
 		print '<div class="loggedin-form-inner">'
 		print '<h2><a href="../create-account.html">Create a new account</a>, <br> or <a href="../index.html">try again.</a></h2>'
@@ -139,7 +143,7 @@ try:
 				cookie['remembered']['expires']=str(expireDate.timetuple())
 				#cookie['domain'] = 'localhost'
 				print cookie
-			print 'Location: home.py'
+			print 'Location: ../home.html'
 			#print starter
 			#print "<h1> WOW " + str(cookie) + "</h1>"
 			# print '<div class="loggedin-form-title">'

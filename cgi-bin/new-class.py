@@ -7,7 +7,7 @@ starter = """
 <head>
 <title>Egenda Login</title>
 <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="icon" href="http://www.iconsdb.com/icons/preview/royal-blue/book-xxl.png">
+<link rel="icon" href="favicon.png">
 <link rel="stylesheet" type="text/css" href="../styles.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,800,800i" rel="stylesheet">
 
@@ -106,7 +106,7 @@ data = c.fetchall()
 if len(data) == 0:
 	c.execute('INSERT INTO classes (id, name, userid, days, time, color, instructor, notes) VALUES (?,?,?,?,?,?,?,?);', [userid+name, name, userid, days, time, color, instructor, notes])
 	print '<h1>Class successfully added!</h1>'
-	print '<h2><a href="home.py">Click here to go home.</a></h2>'
+	print '<h2><a href="../home.html">Click here to go home.</a></h2>'
 else:
 	print '<h1>You already have a class by that name!</h1>'
 	print '<h2><a href="../new-class.html">Click here to try again.</a></h2>'

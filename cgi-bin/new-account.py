@@ -35,6 +35,10 @@ body{
   	background-attachment: fixed;
   	overflow: hidden;
   	background-color: orage;}
+  	h1 {
+  	color:white;
+  	font-size:70;
+  	}
   	h2{
   	color: white;
   	font-size: 40;

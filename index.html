@@ -1,39 +1,17 @@
 <html>
 <head>
-	<link rel="icon" href="//www.iconsdb.com/icons/preview/royal-blue/book-xxl.png">
+	<link rel="icon" href="favicon.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,800i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+<script src="login.js">
 
+</script>
 	<title>Egenda Login</title>
-	<script>
-
-	function getCookie(cname) {
-		var name = cname + "=";
-		var ca = document.cookie.split(';');
-		for(var i = 0; i < ca.length; i++) {
-			var c = ca[i];
-			while (c.charAt(0) == ' ') {
-				c = c.substring(1);
-			}
-			if (c.indexOf(name) == 0) {
-				return c.substring(name.length, c.length);
-			}
-		}
-		return "";
-	}
-
-	function checkCookie() {
-		var user=getCookie("userid");
-		var remembered = getCookie("remembered");
-		if (user != "" && remembered=="True") {
-			window.location = "/cgi-bin/home.py";
-		}
-	}
-	</script>
+	
 </head>
 <body onload="checkCookie()">
-	<!-- SEARCH FOR COOKIE, REDIRECT TO MAIN.PY IF COOKIE FOUND-->
+	<!-- SEARCH FOR COOKIE, REDIRECT TO MAIN.HTML IF COOKIE FOUND-->
 	<div class="document">
 		<div class="login-form">
 			<div class="login-form-title">
@@ -68,5 +46,4 @@
 		</div>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- <script src="login.js"></script> -->
 	</html>
