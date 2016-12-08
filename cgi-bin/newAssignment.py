@@ -40,6 +40,8 @@ except KeyError:
 	time = ""
 try:
 	cl = str(form['className'].value)
+	f1 = open("scum.txt", "w+")
+	f1.write(cl)
 except KeyError:
 	cl = ""
 

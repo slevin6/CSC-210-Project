@@ -78,6 +78,7 @@ $(function getAssignments() {
 
 // Calls python script to get classes data
 $(function getClassDropdown() {
+	console.log("Class Dropdown");
 	$.ajax({
 		url: "cgi-bin/getClassDropdown.py",
 		type: "get",
@@ -90,3 +91,7 @@ $(function getClassDropdown() {
 		}
 	});
 });
+
+
+
+

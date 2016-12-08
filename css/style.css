@@ -1,9 +1,8 @@
 *, *:before, *:after {
--moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
 body {
- overflow: hidden;
  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
  font-weight: 100;
  color: rgba(255, 255, 255, 1);
@@ -20,7 +19,7 @@ body {
 #calendar {
   transform:scale(0.90);
   width: 420px;
-  margin: -6.5% auto;
+  margin: -7% auto;
   height: 570px;
   overflow: hidden;
 }

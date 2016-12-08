@@ -11,7 +11,7 @@ print
 
 def print_assignment(assignment):
 	print "<div class='dataInner'>"
-	print "<h3>" + assignment[1] + "</h3>"
+	print "<h3>" + assignment[1] + "</h3><hr style='width: 90%;'>"
 	if assignment[3] != "" and assignment[4] !="":
 		print "Due " + assignment[3] + " at " + assignment[4] + "<br>"
 	elif assignment[3] != "":

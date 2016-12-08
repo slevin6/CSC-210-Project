@@ -18,20 +18,19 @@
 <body onload="checkCookie()">
 
 	<nav class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand special-text-x2" href="home.html">Egenda</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a class="special-text" href="home.html">Home</a></li>
-              <li><a class="special-text" href="#about">About</a></li>
-              <li><a class="special-text" href="#contact">Contact</a></li>
-              <li><a class="special-text" href="../cgi-bin/logout.py">Log Out</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand special-text-x2" href="home.html">Egenda</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a class="special-text" href="home.html">Home</a></li>
+					<li><a class="special-text" href="about.html">About</a></li>	
+					<li><a class="special-text" href="../cgi-bin/logout.py">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
 	<div class="col-md-3">
 		<h2>My Classes</h2>
@@ -61,13 +60,15 @@
 			<div id="myModal" class="modal">
 
 				<!-- Modal content -->
+
 				<div class="modal-content">
-					<h3>Add an Assignment</h3>
-					<span class="close">Close</span>
-					<br>
-					<form class="form-data"><br><br>
+					<span class="close">Close</span><br><br><br>
+					<h4>Add an Assignment</h4>
+
+					<form class="form-data" style="color:white;">
+
 						Name of Assignment<br><input type="text" name="name"></input><br><br>
-						Class<select name="className" id="getClassDropdown"></select><br>
+						Class<br><select name="className" id="getClassDropdown"></select><br><br>
 						Due Date<br><input type="date" name="date"></input><br><br>
 						Due Time<br><input type="time" name="time"></input><br><br>
 						Additional Information<br><input type="text" name="notes"></input><br><br>
@@ -86,15 +87,15 @@
 		</div>
 	</div>
 
-		<div class="col-md-5">
-			<h2>Calendar</h2>
-			<div class="scrollableBox">
-				<div id="calendar"></div>
-  				<script src="js/moment.js"></script>
-  				<script src="js/index.js"></script>
-			</div>
+	<div class="col-md-5">
+		<h2>Calendar</h2>
+		<div class="scrollableBox">
+			<div id="calendar"></div>
+			<script src="js/moment.js"></script>
+			<script src="js/index.js"></script>
 		</div>
-		<div class="deleteButton"></div>
-		<script src="modal.js"></script>
-	</body>
-	</html>
+	</div>
+	<div class="deleteButton"></div>
+	<script src="modal.js"></script>
+</body>
+</html>

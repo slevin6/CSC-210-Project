@@ -33,11 +33,12 @@
     padding: 10px;
     padding-top: 0;
     border: 1px solid #78a795;
-    width: 40%; /* Could be more or less, depending on screen size */
+    width: 25%; /* Could be more or less, depending on screen size */
 }
 
 .form-data {
     margin: 0 auto;
+    color: black;
 }
 
 /* The Close Button */
@@ -58,7 +59,6 @@
 
 
 select {
-    width: 50%;
     text-align: center;
     vertical-align: center;
 }

@@ -42,21 +42,7 @@ c = conn.cursor()
 # c.execute('DROP TABLE IF EXISTS classes')
 c.execute('CREATE TABLE IF NOT EXISTS classes(id varchar(100)  primary key, name varchar(100), userid varchar(100), days varchar(100), time varchar(10), color varchar(10), instructor varchar(100), notes varchar(200))')
 
-'''
-for key in class_form.keys():
-	print '<p>' + key + '</p>'
-	print '<li>' + str(class_form[key]) + '</li>'
-	#print '<li>' + str(key) + '</li>'
 
-
-MiniFieldStorage('name', 'fas')
-MiniFieldStorage('color', '#0000ff')
-MiniFieldStorage('notes', 'sfafaw')
-MiniFieldStorage('location', 'wia')
-MiniFieldStorage('time', '14:40')
-MiniFieldStorage('instructor', 'fna')
-MiniFieldStorage('day', 'tuesday')
-'''
 # Name is required
 try:
 	name = class_form['name'].value
@@ -110,21 +96,6 @@ if len(data) == 0:
 else:
 	print '<h1>You already have a class by that name!</h1>'
 	print '<h2><a href="../new-class.html">Click here to try again.</a></h2>'
-
-
-'''
-	currentEntries = c.execute('SELECT * FROM classes WHERE username = ? AND classname = ?', [username, classname])
-	data = c.fetchall()
-
-	if len(data) == 0:
-		c.execute('INSERT INTO classes VALUES (?,?,?)', (username, password, salt))
-		print '<h1>Class successfully added!</h1>'
-	else:
-		print '<h1>You already have a class by this name!</h1>'
-except KeyError:
-	print '<h1>You filled out the form wrong!</h1>'
-
-'''
 
 # Close the connection to the database and commits changes
 conn.commit()

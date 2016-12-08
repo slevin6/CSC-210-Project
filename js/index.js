@@ -353,13 +353,13 @@
           success: function(response) {
             if(response.length != 1) {
               var respArray = response.split(/\n/g); //Gets each value from the tuple returned by displayCalendarData
-              console.log(respArray);
+              // console.log(respArray);
 
               for(i = 2; i < (respArray[1] * 4) - 1; i += 3) {
                 var date = new Date(respArray[i + 1].replace(/-/g, '\/'));
 
                 data.push({eventName: respArray[i], calendar: respArray[i + 2], color: 'orange', dueDate: date});
-                console.log(data);
+                // console.log(data);
               }
             }
 

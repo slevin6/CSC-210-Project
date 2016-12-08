@@ -33,8 +33,11 @@ def print_class(x):
 	if str(x[6])!="":
 		print "<br>Instructor: " + str(x[6]) + "<br>"
 
-	print "Class Name: " + str(x[1]) + "<br>"	
-	print "Notes: " + str(x[7]) + "<br>"	
+	if x[1] != "":
+		print "Class Name: " + str(x[1]) + "<br>"	
+
+	if str(x[7]) != "":
+		print "Notes: " + str(x[7]) + "<br>"	
 
 	print "</p></div></div>"
 

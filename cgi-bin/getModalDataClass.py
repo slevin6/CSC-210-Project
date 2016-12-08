@@ -13,17 +13,17 @@ print
 cgitb.enable()
 form = cgi.FieldStorage()
 name = str(form['name'].value)
-name = re.search('(?<=Class Name:[ ])(.*)(?=\<br\>)', name); #Get the name os the assignment using Regex
+name = re.search('(?<=Class Name:[ ])(.*)(?=\<br\>)', name); #Get the name of the assignment using Regex
 name = name.group(0);
 
 
 def print_class(x):
 	classColor = x[5]
 	print "<div style='color:" + classColor + "'; >"
-	print "<div class='dataInner' style='font-size: medium;'>"
-	print '''Name of Class<br><input type="text" name="name" style="margin-left: 11%" value=''' + (str(x[1])) + ''' readonly></input><br><br>'''
+	print "<div class='dataInner' id='classData' style='font-size: medium;'>"
+	print '''Name of Class<br><input type="text" name="name" value=\'''' + (str(x[1])) + '''\' readonly></input><br><br>'''
 	if str(x[4])!="":
-		print '''Due Time<br><input id="time" type="text" name="time" value=''' + str(x[4]) + '''></input><br><br>'''
+		print '''Meeting Time<br><input id="time" type="text" name="time" value=''' + str(x[4]) + '''></input><br><br>'''
 	s = ""
 	if str(x[3])!="":
 		i = 0
@@ -38,11 +38,11 @@ def print_class(x):
 			if x[3][i]!="'" and x[3][i]!="(" and x[3][i]!="," and x[3][i]!=")":
 				s+= x[3][i]
 			i = i + 1
-		print s + "<br>"
+		print "Meeting Days: " + s + "<br>"
 
 	if str(x[6])!="":
-		print '''<br>Instructor<br><input id="instructor" type="text" name="time" value=''' + str(x[6]) + "></input><br>"
-	print '''<br>Notes<br><input id="notes" type="text" name="notes" value=''' + str(x[7]) + "></input><br>"
+		print '''<br>Instructor<br><input id="instructor" type="text" name="time" value=\'''' + str(x[6]) + "\'></input><br>"
+	print '''<br>Notes<br><input id="notes" type="text" name="notes" value=\'''' + str(x[7]) + "\'></input><br>"
 
 	print "</p></div></div>"
 
@@ -73,7 +73,7 @@ data = c.fetchall()
 
 for entry in data:
 	print "<br><br><div class='deleteBox'><h3>"
-	print print_class(entry)
+	print_class(entry)
 	print "</h3>"
 	print "<button class='deleteButton' type='button' style='float: left;'>Delete Class</button>"
 	print "<button class='updateButtonC' type='button' style='float: right;'>Update Class</button>"

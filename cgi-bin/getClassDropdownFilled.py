@@ -7,8 +7,12 @@ import os
 import Cookie
 
 
-def print_class(x):
-	print "<option value=" + str(x[1]) + ">" + str(x[1]) + "</option>"
+def print_class(x, curr):
+	if str(x[1]) != str(curr):
+		print "<option value=" + str(x[1]) + ">" + str(x[1]) + "</option>"
+	else:
+		print "<option selected='selected' value=" + str(x[1]) + ">" + str(x[1]) + "</option>"
+
 
 cgitb.enable()
 
@@ -28,19 +32,25 @@ except KeyError:
 	quit()
 print
 
-f1 = open("test.txt", "w+")	
-f1.write(userid)
+
+conn2 = sqlite3.connect('assignments.db')
+c2 = conn2.cursor()
+form = cgi.FieldStorage()
+unique = str(form['name'].value)
+classData = c2.execute('SELECT * FROM assignments WHERE uuid=?', [unique])
+for entry in classData:
+	currentClassName = str(entry[5])
 
 currentEntries = c.execute('SELECT * FROM classes WHERE userid=?', [userid]) 
 data = c.fetchall()
 
 if len(data)==0:
-	print "<input name='class' type='text'></input>"
+	print "<input style='width:100%;' name='class' type='text'></input>"
 else:
-	print "<select id='class'>"
+	print "<select style='color:black; width:100%; margin-left:20%;' id='class'>"
 	print "<option value='none'>None</option>"
 	for entry in data:
-		print_class(entry)
+		print_class(entry, currentClassName)
 	print "</select>"
 
 conn.commit()

@@ -27,7 +27,7 @@ try:
 	c = conn.cursor()
 	c.execute('CREATE TABLE IF NOT EXISTS assignments(uuid varchar(100) primary key, name varchar(100), userid varchar(100), day varchar(100), time varchar(100), class varchar(100), notes varchar(300))')
 	
-	c.execute('DELETE FROM assignments WHERE userid=? AND name=?', [userid, name])
+	c.execute('DELETE FROM assignments WHERE userid=? AND name=? AND uuid=?', [userid, name, uuid])
 	conn.commit()
 	conn.close()	
 

@@ -20,7 +20,10 @@ body{
 }
 
 .navbar-default {
-	border: 1px solid #78a795;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #78a795;
 }
 
 .navbar-collapse {
@@ -102,11 +105,6 @@ input, textarea {
 	color: black!important;
 }
 
-.col-md-3 {
-	margin: 0!important; 
-	max-height: 75%;
-}
-
 .colorSelector {
 	padding-left: 1;
 	padding-right: 1;
@@ -174,5 +172,24 @@ a {
 	border-radius: 10px;
 	border: 1px solid #78a795;
 	margin: 15;
+}
+
+.modal-content input {
+	width: 70%;
+}
+
+#getClassDropdown {
+	width: 70%;
+	color: black;
+}
+
+#getClassDropDownFilled {
+	color:black;
+	width:70%;
+}
+
+input {
+	text-align: center;
+	vertical-align: center;
 }
 
