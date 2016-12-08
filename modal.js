@@ -107,7 +107,7 @@ $(window).click(function(e) {
 					var time;
 					var notes;
 					var assignName;
-					var className;
+					// var className;
 
 					var classDropDown = document.getElementById("getClassDropDownFilled");
 					if(classDropDown != undefined) {
@@ -149,7 +149,9 @@ $(window).click(function(e) {
 						var text = $(event.target).text();	
 						var class_name = $(event.target)[0].className;
 						if(name.length < 35) {
-							name = $(e.target).closest(".deleteBox").parentElement.innerHTML;
+							console.log($(e.target).closest(".deleteBox").prevObject.innerHTML);
+							name = $(e.target).closest(".deleteBox").prevObject.innerHTML;
+
 						}
 		    			// console.log(class_name);	
 		    			if(text=="Delete Assignment") { // Listens for delete assignment button being hit

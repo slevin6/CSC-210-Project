@@ -20,6 +20,12 @@ try:
 	userid = str(cookie['userid'].value)
 	name = str(form['name'].value)
 
+	f1 = open("test.txt", "w+")
+	f1.write(name)
+
+	uuid = re.search('(?<=hidden=""\>)(.*)(?=\<\/p\>)', name); #Get the name os the assignment using Regex
+	uuid = uuid.group(0);
+
 	name = re.search('(?<=\<h3\>)(.*)(?=\<\/h3\>)', name); #Get the name os the assignment using Regex
 	name = name.group(0);
 
