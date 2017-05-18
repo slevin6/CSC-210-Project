@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=760, user-scalable=0">
+    <link rel="stylesheet" href="Css/puzzle.css">
+    <link rel="stylesheet" href="Css/scratch.css">
+    <link rel="stylesheet" href="Css/scribble.css">
+    <link rel="stylesheet" href="Css/Star_Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <canvas id="starCanvas" width=1180% height=650% class="behind"></canvas>
+
+    <div id="leftHeader">
+        <a href="home.html" type="button">
+            <img src="Pictures/arrow_back.png" id="backButton">
+        </a>
+    </div>
+
+    <div id="rightHeader">
+        <img src="Pictures/question2.png" class="soundButton" onclick="pauseDraw()">
+        <img src="Pictures/hint.png" class="soundButton" onclick="catSound()">
+        <img src="Pictures/sound_on.png" class="soundButton" id="sound" onclick="audioGame()">
+    </div>
+
+
+    <audio id="audioCat" preload="auto">
+        <source src="Sounds/meow.wav" type="audio/mp3">
+    </audio>
+
+    <div class="center header" i18n="scribbleHeader" style="margin-left: 21%"></div>
+    <div class="center underHeader" i18n="scribbleHelp"></div>
+
+    <audio id="background_music2" class="background" autoplay controls loop>
+        <source src="Sounds/jazz.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container behind">
+    </div>
+
+    <div id="addOne" class="addTo clear">
+    </div>
+    <div id="addTwo" class="addTo clear">
+    </div>
+    <div id="addThree" class="addTo clear">
+    </div>
+
+    <img id="scribbleImg" height="0" width="0" src="http://www.lindermanns-tierwelt.de/wp-content/uploads/Katze-Sofakratzen%C2%A9-Vely-Fotolia.com_.jpg" style="display:none">
+
+    <div style="margin:0 auto;">
+        <canvas id="scribbleCanvas" width="580" height="375" style="border: 4px solid #C5376D; margin-left: 27%"></canvas>
+    </div>
+
+    <div id="buttonContainer">
+        <a href="#" id="button1" type="button" onclick="wrongButton()">
+            <span id="dog">Dog</span>
+        </a>
+
+        <a id="button2" type="button" onclick="playButton(); shootStar(); explodeStars1();">
+            <span id="cat">Cat</span>
+        </a>
+
+        <a href="#" id="button3" type="button" onclick="wrongButton()">
+            <span id="pig">Guinea Pig</span>
+        </a>
+    </div>
+
+
+    <audio id="audio1" preload="auto">
+        <source src="Sounds/button_start.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="audioWrong" preload="auto">
+        <source src="Sounds/buzzer.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="scribble.js"></script>
+    <script src="ani_button.js"></script>
+    <script src="i18n.js"></script>
+    <script src="Star_Animation.js"></script>
+    <script src="Star_Explosion.js"></script>
+</body>
+</html>
+

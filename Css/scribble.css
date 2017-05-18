@@ -1,0 +1,81 @@
+.cursor {
+    position: absolute;
+    width: 5%;
+    height: 10.9%;
+    background-image: url(https://openclipart.org/image/800px/svg_to_png/228447/1443438515.png);
+    -ms-transform: rotate(170deg);
+    -webkit-transform: rotate(170deg); 
+    transform: rotate(170deg);
+    background-size: cover;
+    -webkit-animation-name: tutorial;
+    -webkit-animation-timing-function: ease; 
+    -webkit-animation-duration: 1s; 
+    animation-name: tutorial;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: 3
+}
+
+.clear {
+    display: none;
+}
+
+#addOne {
+    margin: 25% 0% 0% 27%;
+}
+
+#addTwo {
+    margin: 25% 0% 0% 39%;   
+}
+
+#addThree {
+    margin: 25% 0% 0% 58%;
+}
+
+@-webkit-keyframes tutorial {
+    0%   {top: 14%;}
+    100%  {top: 20.6%;}
+}
+
+@keyframes tutorial {
+    0%   {top: 14%;}
+    100%  {top: 20.6%;}
+}
+
+.underHeaderTutorial {
+    -webkit-animation-name: neon-sign;
+    -webkit-animation-timing-function: ease; 
+    -webkit-animation-duration: 4s; 
+    animation-name: neon-sign;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: 3
+}
+
+@-webkit-keyframes neon-sign {
+    0%   {color: #C5376D; font-size: 150%}
+    25%   {color: #f44242; font-size: 155%}
+    50%   {color: #f4ac41; font-size: 150%}
+    75%   {color: #e8f441; font-size: 155%}
+    75%   {color: #58f441; font-size: 150%}
+    75%   {color: #41f47f; font-size: 155%}
+    75%   {color: #4167f4; font-size: 150%}
+    75%   {color: #9a41f4; font-size: 155%}
+    75%   {color: #d341f4; font-size: 150%}
+    75%   {color: #f441af; font-size: 155%}
+    100%   {color: #C5376D; font-size: 150%}
+}
+
+@keyframes neon-sign {
+    0%   {color: #C5376D; font-size: 150%}
+    25%   {color: #f44242; font-size: 155%}
+    50%   {color: #f4ac41; font-size: 150%}
+    75%   {color: #e8f441; font-size: 155%}
+    75%   {color: #58f441; font-size: 150%}
+    75%   {color: #41f47f; font-size: 155%}
+    75%   {color: #4167f4; font-size: 150%}
+    75%   {color: #9a41f4; font-size: 155%}
+    75%   {color: #d341f4; font-size: 150%}
+    75%   {color: #f441af; font-size: 155%}
+    100%   {color: #C5376D; font-size: 150%}
+}

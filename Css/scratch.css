@@ -1,0 +1,38 @@
+#revealCanvas{
+    background-image: url("http://www.impelledtoact.com/wp-content/uploads/2012/04/horse.jpg");
+    background-size: 640px 480px;
+    background-repeat: no-repeat;
+}
+
+#scribbleCanvas{
+   margin: 0 auto;
+}
+
+.cursor {
+    position: absolute;
+    width: 5%;
+    height: 10.9%;
+    background-image: url(https://openclipart.org/image/800px/svg_to_png/228447/1443438515.png);
+    -ms-transform: rotate(130deg); /* IE 9 */
+    -webkit-transform: rotate(130deg); /* Chrome, Safari, Opera */
+    transform: rotate(130deg);
+    background-size: cover;
+    -webkit-animation-name: tutorial;
+    -webkit-animation-timing-function: linear; 
+    -webkit-animation-duration: 9.5s; 
+    animation-name: tutorial;
+    animation-timing-function: linear;
+    animation-duration: 9.5s;
+}
+
+
+@-webkit-keyframes tutorial {
+    0%   {left: 21%; top: 18%;}
+    100%  {left: 49%; top: 18%;}
+}
+
+@keyframes tutorial {
+    0%   {left: 20%; top: 15.5%;}
+    100%  {left: 48%; top: 15.5%;}
+}
+

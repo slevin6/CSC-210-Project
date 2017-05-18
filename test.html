@@ -1,27 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Css/intro.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 <body>
 
-	<h1>Test</h1>
+<button id="changeLanguage">
 
-	<ul id="myList">
-<li>One</li>
-<li>Two</li>
-<li>Three</li>
-<li>Four</li>
+</button>
+<span id="audioControl">
+        <a href="#">
+        <img class="soundButton" id="sound" src="Pictures/sound_on.png" onclick="audioControl()">
+            <!--onclick="togglePLay()" -->
+            </a>
+    </span>
 
-	</ul>
+
+<audio id="background_music" autoplay controls loop>
+    <source src="Sounds/background_music.mp3" type="audio/mp3">
+</audio>
 
 
-	<form method="get" action="h">
-		<input type="text" value="Test" name="t1">Test</input>
-		<input type="text" value="Test 2" name="t2">Test 2</input>
-		<input type="submit">
-	</form>
+<img id="animary" src="Pictures/animary.png">
 
-	<script src="modal.js"></script>
+
+<a href="puzzle.html" id="button" type="button" onclick="playButton()">
+    <span id="startText"></span>
+</a>
+
+
+
+<audio id="audio1" preload="auto">
+    <source src="Sounds/button_start.mp3" type="audio/mp3">
+</audio>
+
+<script src="ani_button.js"></script>
+<!--<script src="balloons.js"></script>-->
+<script src="i18n.js"></script>
+
 
 </body>
 </html>
+
